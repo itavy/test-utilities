@@ -1,0 +1,50 @@
+{
+  "name": "@itavy/test-utilities",
+  "version": "0.0.1",
+  "description": "itavy test utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "test:check-style": "./node_modules/.bin/eslint index.js lib/* test/*",
+    "pretest": "npm run test:check-style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/itavy/test-utilities.git"
+  },
+  "keywords": [
+    "testing",
+    "mocha",
+    "chai",
+    "chai-as-promised",
+    "sinon-as-promised"
+  ],
+  "author": "Octavian Ionescu <itavyg@gmail.com> (https://github.com/itavy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itavy/test-utilities/issues"
+  },
+  "homepage": "https://github.com/itavy/test-utilities#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7",
+    "sinon-as-promised": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "bin": {
+    "mocha": "./node_modules/.bin/mocha",
+    "_mocha": "./node_modules/.bin/_mocha",
+    "istanbul": "./node_modules/.bin/istanbul",
+    "installCodingStandards": "./bin/instalCodingStandardsAndStyling.sh"
+  }
+}
