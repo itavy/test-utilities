@@ -15,10 +15,9 @@ cat <<EOF > .eslintrc
     "browser": false,
     "node": true,
     "es6": true,
-    "mocha": true,
+    "mocha": true
   },
   "rules": {
-    "yoda": [2, "always"],
     "key-spacing": [2, {
       "align": "value"
     }],
