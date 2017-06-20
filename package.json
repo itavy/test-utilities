@@ -27,13 +27,13 @@
   },
   "homepage": "https://github.com/itavy/test-utilities#readme",
   "dependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
+    "chai": "^4.0.2",
+    "chai-as-promised": "^7.0.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
+    "mocha": "^3.4.2",
     "pre-commit": "^1.2.2",
-    "sinon": "^2.1.0",
-    "sinon-test": "^1.0.1"
+    "sinon": "^2.3.5",
+    "sinon-test": "^1.0.2"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
@@ -46,6 +46,6 @@
     "mocha": "./node_modules/.bin/mocha",
     "_mocha": "./node_modules/.bin/_mocha",
     "istanbul": "./node_modules/.bin/istanbul",
-    "installCodingStandards": "./bin/instalCodingStandardsAndStyling.sh"
+    "installCodingStandards.sh": "./bin/instalCodingStandardsAndStyling.sh"
   }
 }
