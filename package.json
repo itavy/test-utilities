@@ -33,7 +33,8 @@
     "mocha": "^3.4.2",
     "pre-commit": "^1.2.2",
     "sinon": "^2.3.5",
-    "sinon-test": "^1.0.2"
+    "sinon-test": "^1.0.2",
+    "tap": "^10.7.2"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
@@ -46,6 +47,7 @@
     "mocha": "./node_modules/.bin/mocha",
     "_mocha": "./node_modules/.bin/_mocha",
     "istanbul": "./node_modules/.bin/istanbul",
+    "tap": "./node_modules/.bin/tap",
     "installCodingStandards.sh": "./bin/instalCodingStandardsAndStyling.sh"
   }
 }

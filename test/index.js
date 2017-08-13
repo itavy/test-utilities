@@ -27,4 +27,12 @@ describe('Test Utils Exports', () => {
 
     done();
   });
+
+  it('Tap', (done) => {
+    assert.ok(testLib.getTap instanceof Function, 'getTap is not a function');
+    assert.ok(testLib.getTap() instanceof Object, 'getTap is not a function');
+    assert.ifError(testLib.getTap() instanceof Function);
+
+    done();
+  });
 });
