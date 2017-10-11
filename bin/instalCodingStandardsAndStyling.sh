@@ -8,16 +8,22 @@ cat <<EOF > .eslintrc
 {
   "extends": "airbnb",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2017,
     "sourceType": "script"
   },
   "env": {
     "browser": false,
     "node": true,
-    "es6": true,
     "mocha": true
   },
   "rules": {
+    "comma-dangle": ["error", {
+      "arrays": "always",
+      "objects": "always",
+      "imports": "always",
+      "exports": "always",
+      "functions": "only-multiline"
+    }],
     "key-spacing": [2, {
       "align": "value"
     }],

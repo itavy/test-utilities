@@ -22,16 +22,16 @@ describe('Test Utils Exports', () => {
 
   it('Sinon', (done) => {
     assert.ok(testLib.getSinon instanceof Function, 'getSinon is not a function');
-    assert.ok(testLib.getSinon() instanceof Object, 'getSinon is not a function');
+    assert.ok(testLib.getSinon() instanceof Object, 'getSinon() is not an object');
     assert.ifError(testLib.getSinon() instanceof Function);
 
     done();
   });
 
-  it('Tap', (done) => {
-    assert.ok(testLib.getTap instanceof Function, 'getTap is not a function');
-    assert.ok(testLib.getTap() instanceof Object, 'getTap is not a function');
-    assert.ifError(testLib.getTap() instanceof Function);
+  it('Sinon sandbox', (done) => {
+    assert.ok(testLib.getSinonSandbox instanceof Function, 'getSinonSandbox is not a function');
+    assert.ok(testLib.getSinonSandbox() instanceof Object, 'getSinonSandbox() is not an object');
+    assert.ifError(testLib.getSinon() instanceof Function);
 
     done();
   });

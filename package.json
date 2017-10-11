@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "test:coverage": "./node_modules/.bin/nyc npm test",
     "test:check-style": "./node_modules/.bin/eslint index.js lib/* test/*",
     "pretest": "npm run test:check-style"
   },
@@ -15,7 +15,6 @@
   },
   "keywords": [
     "testing",
-    "mocha",
     "chai",
     "chai-as-promised",
     "sinon-as-promised"
@@ -27,27 +26,45 @@
   },
   "homepage": "https://github.com/itavy/test-utilities#readme",
   "dependencies": {
-    "chai": "^4.0.2",
-    "chai-as-promised": "^7.0.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.4.2",
-    "pre-commit": "^1.2.2",
-    "sinon": "^2.3.5",
-    "sinon-test": "^1.0.2",
-    "tap": "^10.7.2"
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "sinon": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.0.1"
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "mocha": "^4.0.1",
+    "pre-commit": "^1.2.2",
+    "tap": "^10.7.2"
+  },
+  "nyc": {
+    "all": true,
+    "color:": true,
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 95,
+    "statements": 95,
+    "functions": 95,
+    "branches": 95,
+    "include": [
+      "lib/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "watermarks": {
+      "check-coverage": true,
+      "statements": [50, 95],
+      "lines": [50, 95],
+      "functions": [50, 95],
+      "branches": [50, 95]
+    }
   },
   "bin": {
-    "mocha": "./node_modules/.bin/mocha",
-    "_mocha": "./node_modules/.bin/_mocha",
-    "istanbul": "./node_modules/.bin/istanbul",
-    "tap": "./node_modules/.bin/tap",
     "installCodingStandards.sh": "./bin/instalCodingStandardsAndStyling.sh"
   }
 }
