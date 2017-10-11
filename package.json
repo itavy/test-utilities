@@ -1,6 +1,6 @@
 {
   "name": "@itavy/test-utilities",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "itavy test utilities",
   "main": "index.js",
   "scripts": {
@@ -58,10 +58,22 @@
     ],
     "watermarks": {
       "check-coverage": true,
-      "statements": [50, 95],
-      "lines": [50, 95],
-      "functions": [50, 95],
-      "branches": [50, 95]
+      "statements": [
+        50,
+        95
+      ],
+      "lines": [
+        50,
+        95
+      ],
+      "functions": [
+        50,
+        95
+      ],
+      "branches": [
+        50,
+        95
+      ]
     }
   },
   "bin": {
