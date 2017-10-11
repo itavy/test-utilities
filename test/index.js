@@ -5,13 +5,6 @@ const testLib = require('../lib');
 const assert = require('assert');
 
 describe('Test Utils Exports', () => {
-  it('Expect', (done) => {
-    assert.ok(testLib.getExpect instanceof Function, 'getExpect is not a function');
-    assert.ok(testLib.getExpect() instanceof Function, 'getExpect() is not a function');
-
-    done();
-  });
-
   it('Chai', (done) => {
     assert.ok(testLib.getChai instanceof Function, 'getChai is not a function');
     assert.ok(testLib.getChai() instanceof Object, 'getChai() is not an object');
