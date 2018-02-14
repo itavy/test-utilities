@@ -1,6 +1,6 @@
 {
   "name": "@itavy/test-utilities",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "itavy test utilities",
   "main": "index.js",
   "engineStrict": true,
