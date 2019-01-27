@@ -1,5 +1,6 @@
 'use strict';
 
+const assert = require('assert');
 const {
   expect,
   getChai,
@@ -8,13 +9,11 @@ const {
   randomId,
   randomNumber,
 } = require('../');
-const assert = require('assert');
 
 describe('Test Utils Exports', () => {
   it('getChai', (done) => {
     assert.ok(getChai instanceof Function, 'getChai is not a function');
     assert.ok(getChai() instanceof Object, 'getChai() is not an object');
-    assert.ifError(getChai() instanceof Function);
 
     done();
   });
@@ -22,7 +21,6 @@ describe('Test Utils Exports', () => {
   it('Sinon', (done) => {
     assert.ok(getSinon instanceof Function, 'getSinon is not a function');
     assert.ok(getSinon() instanceof Object, 'getSinon() is not an object');
-    assert.ifError(getSinon() instanceof Function);
 
     done();
   });
@@ -30,7 +28,6 @@ describe('Test Utils Exports', () => {
   it('Sinon sandbox', (done) => {
     assert.ok(getSinonSandbox instanceof Function, 'getSinonSandbox is not a function');
     assert.ok(getSinonSandbox() instanceof Object, 'getSinonSandbox() is not an object');
-    assert.ifError(getSinon() instanceof Function);
 
     done();
   });
