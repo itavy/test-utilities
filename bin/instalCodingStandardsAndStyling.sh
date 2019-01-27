@@ -8,7 +8,7 @@ cat <<EOF > .eslintrc
 {
   "extends": "airbnb",
   "parserOptions": {
-    "ecmaVersion": 2017,
+    "ecmaVersion": 2018,
     "sourceType": "script"
   },
   "env": {
