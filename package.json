@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/itavy/test-utilities#readme",
   "dependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "sinon": "^4.3.0"
   },
