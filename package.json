@@ -35,13 +35,13 @@
     "sinon": "^7.2.3"
   },
   "devDependencies": {
-    "eslint": "~5.12.1",
-    "eslint-config-airbnb": "~17.1.0",
-    "eslint-plugin-import": "~2.15.0",
-    "eslint-plugin-jsx-a11y": "~6.2.0",
-    "eslint-plugin-react": "~7.12.4",
-    "mocha": "~5.2.0",
-    "nyc": "~13.1.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1",
     "pre-commit": "^1.2.2"
   },
   "nyc": {
